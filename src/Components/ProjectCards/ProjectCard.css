@@ -1,0 +1,65 @@
+.Project__Card {
+  background-color: var(--black-color);
+  height: 530px;
+  width: 36%;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.Project__Heading {
+  display: flex;
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  background-color: var(--black-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.Project__Heading span {
+  transition: 0.2s ease-in-out;
+}
+
+.Project__Heading span:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.Project__Section{
+    overflow: scroll;
+    overflow-x: hidden;
+     scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+
+    .Project__Card {
+        width: 47%;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .Project__Card {
+        width: 47%;
+        margin-top: 140px;
+    }
+
+}
+
+@media (max-width: 776px) {
+
+    .Project__Card{
+      width: 100%!important;
+      margin-top: 30px;
+    }
+
+}

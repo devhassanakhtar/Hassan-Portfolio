@@ -1,0 +1,71 @@
+.Contact__Card {
+  background-color: var(--white-color);
+  height: auto;
+  width: 30%;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.Contact__Card h1{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height:50px;
+    margin-bottom: 20px;
+}
+
+.Contact__Card p {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #393939;
+}
+
+.contact__btn {
+    background: linear-gradient(360deg, #3b5bdb, #4dabf7);
+    padding: 15px 30px;
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: max-content;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.contact__btn:hover {
+    background: linear-gradient(180deg, #3b5bdb, #4dabf7);
+    transform: scale(1.02);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+
+    .Contact__Card {
+        width: 47%;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .Contact__Card  {
+        width: 47%;
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 776px) {
+
+    .Contact__Card {
+      width: 100%!important;
+      margin-top: 20px;
+    }
+
+}
