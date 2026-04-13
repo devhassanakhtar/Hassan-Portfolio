@@ -1,6 +1,6 @@
 import React from "react";
 import "./Experties.css";
-import Figma from "../../assets/Figma.png";
+import Figma from "../../assets/figma.png";
 import Framer from "../../assets/framer.png";
 import Webflow from "../../assets/Webflow.png";
 import Zeplin from "../../assets/Zeplin.png";
