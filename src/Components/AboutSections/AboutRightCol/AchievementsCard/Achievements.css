@@ -1,0 +1,46 @@
+.Achievement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  padding: 10px 20px;
+  gap: 20px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  width: 32%;
+}
+
+.Achievement:hover {
+  box-shadow:
+    0px 5px 20px rgba(0, 0, 0, 1),
+    inset 0px 5px 15px rgba(255, 255, 255, 0.1);
+  transform: scale(1.03);
+}
+
+.Achievement span {
+  background-color: var(--border-color);
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--white-color);
+}
+
+.info h3 {
+  font-size: 20px;
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.info p {
+  font-size: 12px;
+  margin-top: 0;
+  color: var(--white-color);
+  display: inline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .Achievement {
+    width: 100%;
+  }
+}

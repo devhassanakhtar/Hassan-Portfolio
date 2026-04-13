@@ -4,9 +4,9 @@ import Google from "../../assets/google.png";
 import Behance from "../../assets/behance.png";
 import Notion from "../../assets/Notion.png";
 
-const WorkExperience = () => {
+const WorkExperience = ({ widthClass = "w-full" }) => {
   return (
-    <div className="Work__Section">
+    <div className={`Work__Section ${widthClass}`}>
       <h2>Work Experience</h2>
 
       <div className="Work__Area">
@@ -39,7 +39,7 @@ const WorkExperience = () => {
         </div>
       </div>
 
-    <div className="Work__Area">
+      <div className="Work__Area">
         <div className="Work__Shadow">
           <div className="Work__Company">
             <img src={Notion} alt="" />
@@ -53,7 +53,6 @@ const WorkExperience = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };
