@@ -1,4 +1,3 @@
-import React from "react";
 import "./Testimonials.css";
 import { useRef } from "react";
 

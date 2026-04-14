@@ -1,11 +1,10 @@
-import React from "react";
 import { useRef } from "react";
 import "./TopAboutSection.css";
 import AboutImg from "../../../assets/Aboutimage.png";
 import AchievementsCard from "./AchievementsCard/Achievements";
 import WorkExperience from "../../WorkExperience/WorkExperience";
 import Experties from "../../Experties/Experties";
-import Testimonials from "./TestimonialsCard/testimonials";
+import Testimonials from "./TestimonialsCard/Testimonials";
 import { PiUsersThree } from "react-icons/pi";
 import { TbMessage2Heart } from "react-icons/tb";
 import { RiUserStarLine } from "react-icons/ri";
