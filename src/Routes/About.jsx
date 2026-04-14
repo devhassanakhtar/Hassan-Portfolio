@@ -8,7 +8,6 @@ const About = () => {
     <div className='md:flex md:flex-rowflex-col md:justify-between flex-wrap'>
       <MainCard />
       <TopAboutSection />
-      {/* <WorkExperience /> */}
     </div>
   )
 }

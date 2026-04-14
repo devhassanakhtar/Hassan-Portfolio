@@ -1,0 +1,37 @@
+.Testimonial__Section {
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background-color: var(--black-color);
+  width: 50%;
+  padding: 20px;
+  min-width: 300px;
+  flex: 0 0 auto;
+}
+
+.Testimonial__Section img {
+  margin-bottom: 20px;
+}
+
+.Testimonial__Section h4 {
+  font-size: 13px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.Testimonial__Section h3 {
+  font-size: 15px;
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.Testimonial__Section p {
+  font-size: 10px;
+  color: var(--text-color);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .Testimonial__Section {
+    width: 100%;
+  }
+}
