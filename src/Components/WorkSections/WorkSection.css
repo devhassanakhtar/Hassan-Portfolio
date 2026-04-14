@@ -1,4 +1,4 @@
-.ServicesSection {
+.WorkSection__Container {
   width: 67%;
   border: 2px solid var(--border-color);
   background: linear-gradient(225deg, #111111, #1a1a1a, #2a2a2a);
@@ -6,7 +6,7 @@
   border-radius: 20px;
 }
 
-.ServicesSection h1 {
+.WorkSection__Header {
   font-size: 32px;
   font-weight: 600;
   line-height: 48px;
@@ -14,34 +14,51 @@
   color: var(--white-color);
 }
 
-.services_Area {
+.WorkSection__Header .Project__Card {
+  width: 100%;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.WorkSection__Header .Project__Heading {
+  display: none;
+}
+
+.WorkSection__Header .Project__Section {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
-.Connet__Area{
-    margin: 30px 0;
+.WorkSection__Header .Project__Section .Card1 {
+  width: 47%;
 }
-
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .ServicesSection {
+  .WorkSection__Container {
     width: 55%;
+  }
+
+  .WorkSection__Header .Project__Section .Card1 {
+    width: 100%;
   }
 }
 
+
 @media (max-width: 950px) {
-  .ServicesSection {
+  .WorkSection__Container {
     margin-top: 140px;
   }
 }
 
 @media (max-width: 776px) {
-  .ServicesSection {
+  .WorkSection__Container {
     width: 100%;
     margin-top: 30px;
   }
+  .WorkSection__Header .Project__Card {
+  padding: 10px;
+}
 }
