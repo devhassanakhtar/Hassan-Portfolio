@@ -71,7 +71,7 @@ const Navabar = () => {
             Work
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/blog">
             <span className="icon__shadow">
               <span className="icon__wrapper">
@@ -80,10 +80,12 @@ const Navabar = () => {
             </span>
             Blog
           </NavLink>
-        </li>
+        </li> */}
       </ul>
 
-      <button className="hero__btn">Let's Talk</button>
+      <button className="hero__btn">
+        <NavLink to="/contact">Let's Talk</NavLink>
+      </button>
     </nav>
   );
 };
