@@ -29,19 +29,20 @@
 
 .Top__Section p {
   font-size: 18px;
+  font-weight: 500;
   line-height: 30px;
   margin-top: 20px;
-  color: var(--white-color);
+  color: var(--text-color);
+  line-height: 25px;
   width: 70%;
 }
 
 .Achievements__Card {
   border: 1px solid var(--border-color);
-  background: linear-gradient(225deg, #1d1d1d, #242424, #31313157);
-  padding: 10px;
+  background: linear-gradient(180deg, var(--body-color), var(--black-color));
+  padding: 30px;
   margin-top: 20px;
   border-radius: 15px;
-  /* gap: 10px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,6 +102,10 @@
 .Testimonials::-webkit-scrollbar-thumb {
   background-color: var(--text-color);
   border-radius: 20px;
+}
+
+.Connect__Section{
+  margin: 30px 0;
 }
 
 /* ================= RESPONSIVE ================= */

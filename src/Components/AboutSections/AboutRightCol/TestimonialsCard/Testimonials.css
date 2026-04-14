@@ -33,8 +33,5 @@
 @media (max-width: 1024px) {
   .Testimonial__Section {
     width: 100%;
-    flex: 0 0 100%;
-    min-width: 100%;
-    max-width: 100%;
   }
 }

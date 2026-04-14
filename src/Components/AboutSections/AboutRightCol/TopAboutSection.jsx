@@ -5,16 +5,19 @@ import AchievementsCard from "./AchievementsCard/Achievements";
 import WorkExperience from "../../WorkExperience/WorkExperience";
 import Experties from "../../Experties/Experties";
 import Testimonials from "./TestimonialsCard/Testimonials";
-import { PiUsersThree } from "react-icons/pi";
+import { LiaClipboardListSolid } from "react-icons/lia";
 import { TbMessage2Heart } from "react-icons/tb";
 import { RiUserStarLine } from "react-icons/ri";
 import Jessica from "../../../assets/Jessica.png";
+import Ethan from "../../../assets/Ethan.png";
+import Zonathon from "../../../assets/Zonathan.png";
+import Connect from "./ConnectSection/Connect";
 
 const TopAboutSection = () => {
   const Achivements = [
     {
       id: 1,
-      icon: <PiUsersThree />,
+      icon: <LiaClipboardListSolid />,
       title: "40+",
       description: "Projects Completed",
     },
@@ -43,36 +46,36 @@ const TopAboutSection = () => {
     },
     {
       id: 2,
-      image: Jessica,
+      image: Ethan,
       quote:
-        "Financial planners help individuals make smart decisions about saving and investing money to achieve financial goals in the most effective and efficient way possible.",
-      name: "Jesicca Martin",
-      profession: "UI/UX Designer",
+        "Planners help people understand how to manage their money and where to invest it properly. They make financial planning easy and clear. They show how to use money in the most useful way.",
+      name: "Ethan Brooks",
+      profession: "Product Designer",
     },
     {
       id: 3,
-      image: Jessica,
+      image: Zonathon,
       quote:
-        "Financial planners help individuals make smart decisions about saving and investing money to achieve financial goals in the most effective and efficient way possible.",
-      name: "Jesicca Martin",
-      profession: "UI/UX Designer",
+        "Financial planners help people to knowledge in about how to invest and in save their moneye the most efficient way eve plan ners help people tioniio know ledige in about how.",
+      name: "Zonathon Doe",
+      profession: "Product Designer",
     },
-    {
-      id: 4,
-      image: Jessica,
-      quote:
-        "Financial planners help individuals make smart decisions about saving and investing money to achieve financial goals in the most effective and efficient way possible.",
-      name: "Jesicca Martin",
-      profession: "UI/UX Designer",
-    },
-    {
-      id: 5,
-      image: Jessica,
-      quote:
-        "Financial planners help individuals make smart decisions about saving and investing money to achieve financial goals in the most effective and efficient way possible.",
-      name: "Jesicca Martin",
-      profession: "UI/UX Designer",
-    },
+    // {
+    //   id: 4,
+    //   image: Jessica,
+    //   quote:
+    //     "Financial planners help individuals make smart decisions about saving and investing money to achieve financial goals in the most effective and efficient way possible.",
+    //   name: "Jesicca Martin",
+    //   profession: "UI/UX Designer",
+    // },
+    // {
+    //   id: 5,
+    //   image: Jessica,
+    //   quote:
+    //     "Financial planners help individuals make smart decisions about saving and investing money to achieve financial goals in the most effective and efficient way possible.",
+    //   name: "Jesicca Martin",
+    //   profession: "UI/UX Designer",
+    // },
   ];
 
   const sliderRef = useRef(null);
@@ -161,7 +164,9 @@ const TopAboutSection = () => {
             );
           })}
         </div>
-        {/* <Testimonials /> */}
+      </div>
+      <div className="Connect__Section">
+        <Connect />
       </div>
     </div>
   );

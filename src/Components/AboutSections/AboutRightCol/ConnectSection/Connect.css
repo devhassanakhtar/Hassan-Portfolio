@@ -1,0 +1,65 @@
+.Connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Connect h1{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--white-color);
+    line-height: 40px;
+}
+
+.Connect p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--text-color);
+    width: 60%;
+    text-align: center;
+}
+
+.Connect button {
+    padding: 15px 25px;
+    background: linear-gradient(360deg, #3b5bdb, #4dabf7);
+    color: var(--white-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.Connect button:hover{
+    background: linear-gradient(180deg, #3b5bdb, #4dabf7);
+    box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.5);
+    transform: scale(1.02);
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+
+    .Connect h1{
+        text-align: center;
+    }
+
+    .Connect p{
+        width: 80%;
+    }
+}
+
+@media (max-width: 776px) {
+
+    .Connect h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .Connect p{
+        width: 90%;
+    }
+}
+
