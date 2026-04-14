@@ -11,7 +11,7 @@ import { RiUserStarLine } from "react-icons/ri";
 import Jessica from "../../../assets/Jessica.png";
 import Ethan from "../../../assets/Ethan.png";
 import Zonathon from "../../../assets/Zonathan.png";
-import Connect from "./ConnectSection/Connect";
+import Connect from "../../ConnectSection/Connect";
 
 const TopAboutSection = () => {
   const Achivements = [

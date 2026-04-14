@@ -70,4 +70,14 @@
       margin-top: 20px;
     }
 
+    .shadow {
+    font-size: 18px;
+}
+
+.Services{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 }

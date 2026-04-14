@@ -1,6 +1,6 @@
 import React from "react";
 import "./Services.css";
-import { FiLayers } from "react-icons/fi";
+import { BiSolidLayer } from "react-icons/bi";
 import { CiMobile3 } from "react-icons/ci";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { BsBoxSeam } from "react-icons/bs";
@@ -18,7 +18,7 @@ const Services = () => {
       <div className="Services">
         <div className="Services__Info">
           <div className="shadow">
-            <FiLayers className="icon" />
+            <BiSolidLayer className="icon" />
             <h3>UI/UX Design</h3>
           </div>
         </div>

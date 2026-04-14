@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { CiServer } from "react-icons/ci";
@@ -11,6 +11,12 @@ import { IoClose } from "react-icons/io5";
 
 const Navabar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setOpenMenu(false);
+  }, [location]);
 
   return (
     <nav>
