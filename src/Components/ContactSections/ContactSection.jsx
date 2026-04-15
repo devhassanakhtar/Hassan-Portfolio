@@ -1,18 +1,22 @@
 import React from "react";
 import "./ContactSection.css";
 import { useState } from "react";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
+import { RiUserLocationFill } from "react-icons/ri";
 
 const ContactSection = () => {
   const [username, setUserName] = useState("");
 
   const handleName = (e) => {
-  setUserName(e.target.value);
+    setUserName(e.target.value);
 
-  setErrors((prev) => ({
-    ...prev,
-    name: "",
-  }));
-};
+    setErrors((prev) => ({
+      ...prev,
+      name: "",
+    }));
+  };
 
   const [tel, setTel] = useState("");
 
@@ -89,7 +93,6 @@ const ContactSection = () => {
     }
   };
 
-
   return (
     <div className="ContactSection__Container">
       <div className="ContactSection">
@@ -145,20 +148,65 @@ const ContactSection = () => {
                 id=""
                 placeholder="Your Message"
                 className={`input ${errors.message ? "input-error" : ""}`}
-                rows={5}
+                rows={4}
                 value={message}
                 onChange={handleMessage}
               ></textarea>
               {errors.message && <p className="error">{errors.message}</p>}
 
-              <button type="submit" className="Form__Btn">Send Message</button>
+              <button type="submit" className="Form__Btn">
+                Send Message
+              </button>
             </form>
           </div>
 
           <div className="Location">
-            <h1>Location</h1>
+            <div className="phone">
+              <span>
+                <FaPhone size={25} />
+              </span>
+              <div className="phone__info">
+                <h3>Phone</h3>
+                <p>+1 (888) 456 7852</p>
+              </div>
+            </div>
+
+            <div className="email">
+              <span>
+                <MdEmail size={25} />
+              </span>
+              <div className="email__info">
+                <h3>email</h3>
+                <p>info@advisium.com</p>
+              </div>
+            </div>
+
+            <div className="navigation">
+              <span>
+                <IoLocationSharp size={25} />
+              </span>
+              <div className="navigation__info">
+                <h3>Location</h3>
+                <p>123 Main Street, City, Country</p>
+              </div>
+            </div>
+
+            <div className="Assistance">
+              <span>
+                <RiUserLocationFill size={25} />
+              </span>
+              <div className="Assistance__info">
+                <h3>Assistance Hours</h3>
+                <p>Sun - Fri: 9am - 6pm </p>
+                <p>Mon - Fri: 9am - 6pm</p>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div className="Map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5893.731297041149!2d73.16650442737891!3d33.5707271633418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf49c71bac3b%3A0x440c38883a64cd51!2sThe%20Monal%20Islamabad!5e1!3m2!1sen!2s!4v1776235321005!5m2!1sen!2s" width="100%" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   );

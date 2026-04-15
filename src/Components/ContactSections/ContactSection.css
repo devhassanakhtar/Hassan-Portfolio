@@ -19,26 +19,27 @@
 }
 
 .Form__Section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .Form {
-    width: 47%;
+  width: 47%;
 }
 
-.Form .input{
-    width: 100%;
-    padding: 15px;
-    background: #1a1a1a;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    color: var(--white-color);
-    margin-top: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5),
+.Form .input {
+  width: 100%;
+  padding: 15px;
+  background: #1a1a1a;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--white-color);
+  margin-top: 10px;
+  box-shadow:
+    0px 5px 10px rgba(0, 0, 0, 0.5),
     inset 2px 4px 16px rgba(253, 253, 253, 0.05);
 }
 
@@ -61,6 +62,7 @@
 }
 
 .Form__Btn {
+  width: 100%;
   margin-top: 20px;
   padding: 15px 30px;
   background: linear-gradient(360deg, #3b5bdb, #4dabf7);
@@ -72,11 +74,64 @@
 }
 
 .Form__Btn:hover {
-      background: linear-gradient(180deg, #3b5bdb, #4dabf7);
-    box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.5);
-    transform: scale(1.02);
+  background: linear-gradient(180deg, #3b5bdb, #4dabf7);
+  box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.5);
+  transform: scale(1.02);
 }
 
+.Location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background: #1a1a1a;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  width: 47%;
+  background-color: var(--black-color);
+  box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.1);
+}
+
+.Location .phone , .Location .email, .Location .navigation, .Location .Assistance {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--black-color);
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 20px rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.Location .phone span , .Location .email span , .Location .navigation span , .Location .Assistance span {
+  padding: 15px;;
+  border: 1px solid var(--border-color);
+  border-radius: 20%;
+  background-color: var(--black-color);
+  box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.2);
+  color: var(--white-color);
+}
+
+.phone__info , .email__info , .navigation__info , .Assistance__info {
+  color: var(--white-color);
+}
+
+.phone__info h3 , .email__info h3 , .navigation__info h3 , .Assistance__info h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.phone__info p , .email__info p , .navigation__info p , .Assistance__info p {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.Map iframe{
+  border-radius: 15px;
+  margin-top: 20px;
+}
 
 @media (max-width: 1024px) {
   .ContactSection__Container {
@@ -84,6 +139,10 @@
   }
 
   .Form {
+    width: 100%;
+  }
+
+  .Location {
     width: 100%;
   }
 }
@@ -100,4 +159,3 @@
     margin-top: 30px;
   }
 }
-
