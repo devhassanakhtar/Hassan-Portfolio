@@ -18,7 +18,7 @@ const TopAboutSection = () => {
     {
       id: 1,
       icon: <LiaClipboardListSolid />,
-      title: "40+",
+      title: "10+",
       description: "Projects Completed",
     },
     {
@@ -30,7 +30,7 @@ const TopAboutSection = () => {
     {
       id: 3,
       icon: <RiUserStarLine />,
-      title: "12+",
+      title: "1+",
       description: "Years Experiences",
     },
   ];
@@ -118,9 +118,7 @@ const TopAboutSection = () => {
           FrontEnd web developer!
         </h1>
         <p>
-          As a creative developer, I blend code and design to build unique,
-          user-centric experiences. Let’s turn your ideas into a dynamic &
-          engaging digital reality!
+          I am a passionate Frontend Developer focused on building modern, responsive, and user-friendly web applications. I enjoy turning ideas into clean and visually appealing interfaces that provide a great user experience. I have strong skills in HTML, CSS, JavaScript, and React, with experience in creating responsive designs across different devices. I focus on performance, usability, and continuous learning to improve my development skills. My goal is to build efficient and scalable frontend solutions that enhance user engagement and contribute to overall product success.
         </p>
 
         <div className="Achievements__Card">

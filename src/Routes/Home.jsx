@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <div className="md:flex md:justify-between flex-wrap">
         <ProfileCard />
-        <ProjectCard />
+        <ProjectCard limit={4}/>
         <Services />
       </div>
       <div className="md:flex md:justify-between flex-wrap">

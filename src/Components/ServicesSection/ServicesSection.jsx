@@ -23,9 +23,9 @@ const ServicesSection = () => {
     {
       id: 2,
       Icon: <CiMobile3 className="icon" />,
-      title: "Mobile App Design",
+      title: "WordPress Website",
       description:
-        "Expert Product Designer with 12 years of experience working in 24+ countries.",
+        "Expert WordPress Developer with 3+ years of experience",
       rightarrow: <BsArrowRight className="rightarrow" />,
     },
     {
@@ -39,9 +39,9 @@ const ServicesSection = () => {
     {
       id: 4,
       Icon: <BsBoxSeam className="icon" />,
-      title: "Branding",
+      title: "Landing Pages",
       description:
-        "Skilled Product Designer with 12 years of experience spanning 24+ countries.",
+        "Landing Page Designer focused on creating high-converting and visually engaging digital experiences.",
       rightarrow: <BsArrowRight className="rightarrow" />,
     },
     {

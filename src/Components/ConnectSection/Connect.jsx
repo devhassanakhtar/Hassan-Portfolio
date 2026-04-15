@@ -1,5 +1,6 @@
 import React from "react";
 import "./Connect.css";
+import { NavLink } from "react-router";
 
 const Connect = () => {
   return (
@@ -13,8 +14,10 @@ const Connect = () => {
         digital experiences that 🎨 captivate and engage. Let’s bring 🚀 your
         vision to life!
       </p>
-      
-      <button>Let's Talk With us</button>
+
+      <button>
+        <NavLink to="/contact"> Let's Talk With us</NavLink>
+      </button>
     </div>
   );
 };

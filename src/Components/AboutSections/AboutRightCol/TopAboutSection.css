@@ -28,13 +28,13 @@
 }
 
 .Top__Section p {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 30px;
   margin-top: 20px;
   color: var(--text-color);
   line-height: 25px;
-  width: 70%;
+  width: 80%;
 }
 
 .Achievements__Card {
@@ -55,7 +55,7 @@
 .work-experience-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   gap: 20px;
 }
 

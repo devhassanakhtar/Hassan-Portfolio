@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectCard1.css";
 import { IoIosArrowRoundDown } from "react-icons/io";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 
 
 const ProjectCard1 = (props) => {
