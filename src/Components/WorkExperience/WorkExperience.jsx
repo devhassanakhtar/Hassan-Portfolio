@@ -1,6 +1,6 @@
 import React from "react";
 import "./WorkExperience.css";
-import Google from "../../assets/google.png";
+import Peham from "../../assets/Peham.webp";
 import Behance from "../../assets/behance.png";
 import Notion from "../../assets/Notion.png";
 
@@ -12,14 +12,14 @@ const WorkExperience = ({ widthClass = "w-full" }) => {
       <div className="Work__Area">
         <div className="Work__Shadow">
           <div className="Work__Company">
-            <img src={Google} alt="" />
+            <img src={Peham} alt="" />
             <div className="Company__info">
-              <h3>Google</h3>
-              <p>Product Designer</p>
+              <h3>Peham</h3>
+              <p>As an Internship</p>
             </div>
           </div>
           <div className="Work__info">
-            <p>2016-2020</p>
+            <p>2025-continue</p>
           </div>
         </div>
       </div>

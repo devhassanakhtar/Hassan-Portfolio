@@ -45,9 +45,15 @@
 .Work__Company {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     color: var(--text-color);
+}
+
+.Work__Company img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
 }
 
 .Company__info h3{

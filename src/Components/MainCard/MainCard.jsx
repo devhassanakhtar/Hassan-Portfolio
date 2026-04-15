@@ -1,51 +1,82 @@
-import React from 'react'
-import './MainCard.css'
+import React from "react";
+import "./MainCard.css";
 import ProfileImage from "../../assets/profileimg.avif";
 import { LuPhoneCall } from "react-icons/lu";
 import { LiaTelegramPlane } from "react-icons/lia";
-import { FaFacebookF , FaTwitter , FaInstagramSquare , FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaTwitter,
+  FaInstagramSquare,
+  FaLinkedin,
+} from "react-icons/fa";
+import { NavLink } from "react-router";
 
 const MainCard = () => {
+  const handleWhatsApp = () => {
+    window.open("https://wa.me/03085409842", "_blank");
+  };
+
   return (
     <div className="MainCard">
-          <img src={ProfileImage} alt="" />
-    
-          <h1 className="Username">
-            Hassan <br /> Akhtar 👋
-          </h1>
-    
-          <p>
-            A Passionate Full Stack Developer 🖥️ & Product Designer having 12 years
-            of Experiences over 24+ Country Worldwide.
-          </p>
-    
-          <div className="profile__btn">
-            <button className="book__a__call">
-              <span className="icon">
-                <LuPhoneCall />
-              </span>
-              Book a call
-            </button>
-            <button className="mail__btn">
-                <span className="icon">
-                    <LiaTelegramPlane />
-                </span>
-                Send Mail
-            </button>
-          </div>
-    
-          <div className="social__links">
-            <div className="link__text">Follow Me</div>
-            <div className="social__icons">
-                <span className="icon"><FaFacebookF /> </span>
-                <span className="icon"><FaTwitter /></span>
-                <span className="icon"><FaInstagramSquare /></span>
-                <span className="icon"><FaLinkedin /></span>
-            </div>
-          </div>
+      <img src={ProfileImage} alt="" />
+
+      <h1 className="Username">
+        Hassan <br /> Akhtar 👋
+      </h1>
+
+      <p>
+        A Passionate Full Stack Developer 🖥️ & Product Designer having 12 years
+        of Experiences over 24+ Country Worldwide.
+      </p>
+
+      <div className="profile__btn">
+        <button className="book__a__call" onClick={handleWhatsApp}>
+          <span className="icon">
+            <LuPhoneCall />
+          </span>
+          Book a call
+        </button>
+        <NavLink to="/contact">
+          <button className="mail__btn">
+            <span className="icon">
+              <LiaTelegramPlane />
+            </span>
+            Send Mail
+          </button>
+        </NavLink>
+      </div>
+
+      <div className="social__links">
+        <div className="link__text">Follow Me</div>
+        <div className="social__icons">
+          <span className="icon">
+            <a
+              href="https://github.com/devhassanakhtar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />{" "}
+            </a>
+          </span>
+          <span className="icon">
+            <FaTwitter />
+          </span>
+          <span className="icon">
+            <FaInstagramSquare />
+          </span>
+          <span className="icon">
+            <a
+              href="https://linkedin.com/in/devhassanakhtar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+          </span>
         </div>
-  )
-}
+      </div>
+    </div>
+  );
+};
 
-export default MainCard
-
+export default MainCard;

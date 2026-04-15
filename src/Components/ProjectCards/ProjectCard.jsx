@@ -1,33 +1,33 @@
 import React from "react";
 import "./ProjectCard.css";
 import ProjectCard1 from "./ProjectCard1/ProjectCard1";
-import Product1 from "../../assets/product1.png";
-import Product2 from "../../assets/product2.png";
-import Product3 from "../../assets/product3.png";
-import Product4 from "../../assets/product4.webp";
+import Project1 from "../../assets/Project1.webp";
+import Project2 from "../../assets/Project2.webp";
+import Project3 from "../../assets/Project3.webp";
+import Project4 from "../../assets/Project4.webp";
 
 const ProjectCard = (prop) => {
 
     const projectCard = [
         {
-            ProductImage : Product1,
-            PrductHeading : 'Sass Product Design',
-            ProductDescription : '2022 July'
+            ProductImage : Project1,
+            PrductHeading : 'Wizard Landing Page',
+            ProductDescription : '2025 November'
         },
         {
-            ProductImage : Product2,
-            PrductHeading : 'Mobile App UI Design',
-            ProductDescription : '2023 July'
+            ProductImage : Project2,
+            PrductHeading : 'Edusity Landing Page',
+            ProductDescription : '2025 December'
         },
         {
-            ProductImage : Product3,
-            PrductHeading : 'Marketing Website Design',
-            ProductDescription : '2022 October'
+            ProductImage : Project3,
+            PrductHeading : 'Tilia Wedding Page',
+            ProductDescription : '2026 January'
         },
         {
-            ProductImage : Product4,
-            PrductHeading : 'Creative Branding Design',
-            ProductDescription : '2024 January'
+            ProductImage : Project4,
+            PrductHeading : 'Xian Gallers Portfolio',
+            ProductDescription : '2024 November'
         }
     ]
 

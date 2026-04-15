@@ -1,18 +1,14 @@
 import React from "react";
 import "./Experties.css";
-import HTML from "../../assets/html.png";
-import CSS from "../../assets/css.png";
-import JavaScript from "../../assets/js.png";
-import Twailwind from "../../assets/tailwind.png";
-import Wordpress from "../../assets/WordPress.png";
-import Bootstrap from "../../assets/bootstrap.png";
-import Reacticon from "../../assets/react.png";
-import Redux from "../../assets/redux.png";
-import Framer from "../../assets/framer.png";
-import Webflow from "../../assets/Webflow.png";
-import Zeplin from "../../assets/Zeplin.png";
-import Miro from "../../assets/Miro.png";
-import Notion from "../../assets/Notion.png";
+import HTML from "../../assets/html.webp";
+import CSS from "../../assets/css.webp";
+import JavaScript from "../../assets/js.webp";
+import Twailwind from "../../assets/tailwind.webp";
+import Wordpress from "../../assets/WordPress.webp";
+import Bootstrap from "../../assets/bootstrap.webp";
+import Reacticon from "../../assets/react.webp";
+import Redux from "../../assets/redux.webp";
+
 
 const Experties = () => {
   return (
