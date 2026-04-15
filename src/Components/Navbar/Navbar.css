@@ -70,6 +70,10 @@ ul li a {
   border-radius: 50%;
 }
 
+.contact {
+  display: none;
+}
+
 
 ul li a.active {
   background: linear-gradient(360deg, #3b5bdb, #4dabf7);
@@ -126,7 +130,6 @@ ul li a:hover .icon__wrapper {
     top: 10px;
     left: 20px;
     right: 20px;
-
     width: auto;
     border-radius: 15px;
     flex-direction: column;
@@ -160,5 +163,9 @@ ul li a:hover .icon__wrapper {
 
   .hero__btn {
     display: none;
+  }
+
+  .contact {
+    display: flex;
   }
 }

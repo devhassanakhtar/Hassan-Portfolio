@@ -87,6 +87,10 @@
         width: 47%;
     }
 
+    .Work__info{
+        display: none;
+    }
+
 }
 
 @media (max-width: 776px) {

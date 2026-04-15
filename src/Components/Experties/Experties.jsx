@@ -1,6 +1,13 @@
 import React from "react";
 import "./Experties.css";
-import Figma from "../../assets/figma.png";
+import HTML from "../../assets/html.png";
+import CSS from "../../assets/css.png";
+import JavaScript from "../../assets/js.png";
+import Twailwind from "../../assets/tailwind.png";
+import Wordpress from "../../assets/WordPress.png";
+import Bootstrap from "../../assets/bootstrap.png";
+import Reacticon from "../../assets/react.png";
+import Redux from "../../assets/redux.png";
 import Framer from "../../assets/framer.png";
 import Webflow from "../../assets/Webflow.png";
 import Zeplin from "../../assets/Zeplin.png";
@@ -14,37 +21,46 @@ const Experties = () => {
       <div className="flex justify-between">
         <div className="Experties__Area">
           <div className="Experties">
-            <img src={Figma} alt="" className="Figma__img" />
-
-            <p>Figma</p>
+            <img src={HTML} alt="" className="HTML__img" />
+            <p>HTML</p>
           </div>
 
           <div className="Experties">
-            <img src={Webflow} alt="" className="Webflow__img" />
-            <p>Webflow</p>
+            <img src={JavaScript} alt="" className="Webflow__img" />
+            <p>JavaScript</p>
           </div>
 
           <div className="Experties">
-            <img src={Miro} alt="" className="Webflow__img" />
-            <p>Miro</p>
+            <img src={Wordpress} alt="" />
+            <p>Wordpress</p>
+          </div>
+
+          <div className="Experties">
+            <img src={Reacticon} alt="" className="Bootstrap" />
+            <p>Reacticon</p>
           </div>
         </div>
 
         <div className="Experties__Area">
           <div className="Experties">
-            <img src={Framer} alt="" className="Figma__img" />
+            <img src={CSS} alt="" className="Figma__img" />
 
-            <p>Framer</p>
+            <p>CSS</p>
           </div>
 
           <div className="Experties">
-            <img src={Zeplin} alt="" className="Webflow__img" />
-            <p>Zeplin</p>
+            <img src={Twailwind} alt="" className="Twailwind" />
+            <p>Twailwind</p>
           </div>
 
           <div className="Experties">
-            <img src={Notion} alt="" className="Webflow__img" />
-            <p>Notion</p>
+            <img src={Bootstrap} alt="" className="Bootstrap" />
+            <p>Bootstrap</p>
+          </div>
+
+          <div className="Experties">
+            <img src={Redux} alt="" className="Bootstrap" />
+            <p>Redux</p>
           </div>
         </div>
       </div>

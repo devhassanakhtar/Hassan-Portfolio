@@ -26,7 +26,7 @@ const Services = () => {
         <div className="Services__Info">
           <div className="shadow">
             <CiMobile3 className="icon" />
-            <h3>Mobile App</h3>
+            <h3>WordPress Website</h3>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const Services = () => {
         <div className="Services__Info">
           <div className="shadow">
             <BsBoxSeam className="icon" />
-            <h3>Branding</h3>
+            <h3>Landing Pages</h3>
           </div>
         </div>
 

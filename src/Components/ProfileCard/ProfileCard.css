@@ -1,5 +1,9 @@
 .Card {
-  background: linear-gradient(230deg, rgba(255, 255, 255), rgba(255,255,255,0.8));
+  background: linear-gradient(
+    230deg,
+    rgba(255, 255, 255),
+    rgba(255, 255, 255, 0.8)
+  );
   min-height: 530px;
   width: 30%;
   border-radius: 20px;
@@ -11,8 +15,8 @@
 }
 
 .Card img {
-    width: 120px;
-    border-radius: 10px;
+  width: 120px;
+  border-radius: 10px;
 }
 
 .Username {
@@ -58,74 +62,77 @@
   padding: 15px 25px;
 }
 
-.book__a__call:hover , .mail__btn:hover {
-  transform: scale(.95);
+.book__a__call:hover,
+.mail__btn:hover {
+  transform: scale(0.95);
 }
 
 .social__links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* margin-top: 20px; */
-    padding: 20px;
-    border-radius: 10px;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 10px;
+  padding: 15px !important;
+  border-radius: 10px;
 }
 
-.link__text{
-    font-size: 17px;
-    font-weight: 500;
+.link__text {
+  font-size: 17px;
+  font-weight: 500;
 }
 
-.social__icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.social__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.social__icons .icon{
-    background-color: var(--white-color);
-    padding: 7px ;
-    margin: 0 5px;
-    border-radius: 10px;
-    transition: 0.2s ease-in;
+.social__icons .icon {
+  background-color: var(--white-color);
+  padding: 7px;
+  margin: 0 5px;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
 }
 
-.social__icons .icon:hover{
-    transform: scale(1.2);
+.social__icons .icon:hover {
+  transform: scale(1.2);
 }
-
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-
-    .Card {
-        width: 47%;
-    }
-
+  .Card {
+    width: 47%;
+  }
 }
 
 @media (max-width: 950px) {
-
-    .Card {
-        width: 47%;
-        margin-top: 140px;
-    }
-
+  .Card {
+    width: 47%;
+    margin-top: 140px;
+  }
 }
 
 @media (max-width: 776px) {
+  .Card {
+    width: 100% !important;
+  }
 
-    .Card{
-      width: 100%!important;
-    }
+  .profile__btn {
+    flex-direction: column;
+    gap: 10px;
+    align-items: baseline;
+  }
 
-    .profile__btn{
-      flex-direction: column;
-      gap: 10px;
-      align-items: baseline;
-    }
+  .link__text {
+    font-size: 15px !important;
+  }
 
+  .social__icons .icon {
+    padding: 5px !important;
+    margin: 0 3px !important;
+    font-size: 15px !important;
+  }
 }

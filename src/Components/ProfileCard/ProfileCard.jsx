@@ -15,8 +15,7 @@ const ProfileCard = () => {
       </h1>
 
       <p>
-        A Passionate Full Stack Developer 🖥️ & Product Designer having 12 years
-        of Experiences over 24+ Country Worldwide.
+        I'm a passionate Frontend Developer 🖥️ with 1 year of experience, and I’m continuously learning to improve my skills.
       </p>
 
       <div className="profile__btn">

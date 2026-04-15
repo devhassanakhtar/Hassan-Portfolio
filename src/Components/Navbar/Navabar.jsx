@@ -81,6 +81,16 @@ const Navabar = () => {
             Blog
           </NavLink>
         </li> */}
+        <li className="contact">
+          <NavLink to="/contact">
+            <span className="icon__shadow">
+              <span className="icon__wrapper">
+                <FiLayers />
+              </span>
+            </span>
+            Let's Talk
+          </NavLink>
+        </li>
       </ul>
 
       <button className="hero__btn">
