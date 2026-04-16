@@ -1,0 +1,136 @@
+.page404-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  background: linear-gradient(225deg, var(--body-color), var(--border-color));
+  padding: 50px;
+}
+
+.page404-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.page404-copy {
+  flex: 1;
+  max-width: 540px;
+}
+
+.page404-label {
+  display: inline-block;
+  background: #e7f0ff;
+  color: #2563eb;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.page404-copy h1 {
+  font-size: clamp(3rem, 4vw, 5rem);
+  line-height: 1.05;
+  margin: 0;
+  color: var(--white-color);
+}
+
+.page404-copy h1 span {
+  color: var(--primary-color);
+}
+
+.page404-copy p {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-color);
+  max-width: 520px;
+}
+
+.page404-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.page404-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.page404-btn.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.page404-btn.primary:hover {
+  transform: translateY(-2px);
+  background: #1d4ed8;
+}
+
+.page404-btn.secondary {
+  background: transparent;
+  color: #2563eb;
+  border: 1px solid #c7d2fe;
+}
+
+.page404-btn.secondary:hover {
+  background: #eff6ff;
+}
+
+.page404-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.page404-image img {
+  max-width: 100%;
+}
+
+@media (max-width: 950px) {
+  .page404-wrapper {
+    margin-top: 140px;
+  }
+  .page404-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .page404-copy {
+    max-width: 100%;
+  }
+
+  .page404-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 776px) {
+  .page404-btn {
+    width: 100%;
+  }
+
+  .page404-copy h1{
+    font-size: 26px;
+  }
+
+  .page404-copy p{
+    font-size: 16px;
+  }
+}

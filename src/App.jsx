@@ -9,6 +9,7 @@ import Blog from './Routes/Blog'
 import Contact from './Routes/Contact'
 import Footer from "./Components/Footer/Footer";
 import Project from "./Routes/Project";
+import Page404 from "./Routes/Page404"
 
 
 
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/blog" element={<Blog />}/>
         <Route path="/contact" element={<Contact />}/>
         <Route path="/project/:id" element={<Project />}/>
+        <Route path="*" element={<Page404 />}/>
       </Routes>
       <Footer />
     </div>
