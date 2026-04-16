@@ -19,10 +19,10 @@ import { NavLink } from "react-router-dom";
 const ProjectCard = (props) => {
   const projectCard = [
     {
-      id: 1,
-      ProductImage: Project1,
-      PrductHeading: "Wizard Landing Page",
-      ProductDescription: "2025 November",
+      id: 4,
+      ProductImage: Project4,
+      PrductHeading: "Xian Gallers Portfolio",
+      ProductDescription: "2024 November",
     },
     {
       id: 2,
@@ -37,10 +37,10 @@ const ProjectCard = (props) => {
       ProductDescription: "2026 January",
     },
     {
-      id: 4,
-      ProductImage: Project4,
-      PrductHeading: "Xian Gallers Portfolio",
-      ProductDescription: "2024 November",
+      id: 1,
+      ProductImage: Project1,
+      PrductHeading: "Wizard Landing Page",
+      ProductDescription: "2025 November",
     },
     {
       id: 5,
@@ -95,7 +95,7 @@ const ProjectCard = (props) => {
       ProductImage: Project13,
       PrductHeading: "Tic Tac Toe",
       ProductDescription: "2025 December",
-    }
+    },
   ];
 
   const displayedProjects = props.limit
@@ -106,12 +106,15 @@ const ProjectCard = (props) => {
     <div className="Project__Card">
       <div className="Project__Heading">
         <h2>My Projects</h2>
-        <span><NavLink to="/work"> See All</NavLink></span>
+        <span>
+          <NavLink to="/work"> See All</NavLink>
+        </span>
       </div>
       <div className="Project__Section">
         {displayedProjects.map(function (elem) {
           return (
             <ProjectCard1
+              id={elem.id}
               heading={elem.PrductHeading}
               image={elem.ProductImage}
               des={elem.ProductDescription}

@@ -1,9 +1,10 @@
 import React from "react";
 import "./ProjectCard1.css";
 import { IoIosArrowRoundDown } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const ProjectCard1 = (props) => {
+  console.log(props.id);
   return (
     <div className="Card1">
       <div className="Shadow">
@@ -14,9 +15,9 @@ const ProjectCard1 = (props) => {
             <p>{props.des}</p>
           </div>
           <span>
-              <Link to="/project">
-                <IoIosArrowRoundDown className="icon" />
-              </Link>
+            <NavLink to={`/project/${props.id}`}>
+              <IoIosArrowRoundDown className="icon" />
+            </NavLink>
           </span>
         </div>
       </div>

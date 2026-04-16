@@ -24,55 +24,34 @@
 }
 
 .Project__Section__Container h3 {
-  color: var(--white-color);
+  color: var(--text-color);
   margin-top: 20px;
 }
 
 .des {
   margin-top: 20px;
   text-align: center;
+  font-size: 30px !important;
 }
 
-.Language__used {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 30px 0;
-  border: 1px solid var(--border-color);
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow:
-    0px 2px 15px rgba(0, 0, 0, 0.5),
-    inset 0px 0px 20px rgba(255, 255, 255, 0.1);
-}
-
-.language {
+.Project__Section__Container h2{
   color: var(--white-color);
-  border: 1px solid var(--border-color);
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow:
-    0px 2px 15px rgba(0, 0, 0, 0.5),
-    inset 0px 0px 20px rgba(255, 255, 255, 0.1);
-  width: 32%;
-  cursor: context-menu;
-  transition: all 0.3s ease-in-out;
-}
-
-.language span {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.language span h2 {
-  font-size: 20px;
+  margin-top: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 
-.language:hover {
-  transform: scale(1.02);
+.Project__Section__Container  .project_link{
+  color: var(--primary-color);
+  font-size: 18px;
+  width: max-content !important;
+  display: block;
 }
+
+
+
+
+
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
@@ -112,5 +91,8 @@
 
   .Project__Section__Container h3 {
     font-size: 14px;
+  }
+  .des {
+    font-size: 20px !important;
   }
 }
