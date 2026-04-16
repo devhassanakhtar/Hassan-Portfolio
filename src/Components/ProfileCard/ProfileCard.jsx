@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProfileCard.css";
-import ProfileImage from "../../assets/hassan.png";
+import ProfileImage from "../../assets/hassan.webp";
 import { LuPhoneCall } from "react-icons/lu";
 import { LiaTelegramPlane } from "react-icons/lia";
 import {

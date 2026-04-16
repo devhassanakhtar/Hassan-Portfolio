@@ -1,8 +1,8 @@
 import React from "react";
 import "./WorkExperience.css";
 import Peham from "../../assets/Peham.webp";
-import Behance from "../../assets/behance.png";
-import Notion from "../../assets/Notion.png";
+import Pakipreneurs from "../../assets/pakipreneurs.webp";
+import Fiverr from "../../assets/fiver.webp";
 
 const WorkExperience = ({ widthClass = "w-full" }) => {
   return (
@@ -27,14 +27,14 @@ const WorkExperience = ({ widthClass = "w-full" }) => {
       <div className="Work__Area">
         <div className="Work__Shadow">
           <div className="Work__Company">
-            <img src={Behance} alt="" />
+            <img src={Fiverr} alt="" />
             <div className="Company__info">
-              <h3>Behance</h3>
-              <p>Senior UI UX Designer</p>
+              <h3>Fiverr</h3>
+              <p>Frontend Web Developer</p>
             </div>
           </div>
           <div className="Work__info">
-            <p>2020-2022</p>
+            <p>2024-continue</p>
           </div>
         </div>
       </div>
@@ -42,14 +42,14 @@ const WorkExperience = ({ widthClass = "w-full" }) => {
       <div className="Work__Area">
         <div className="Work__Shadow">
           <div className="Work__Company">
-            <img src={Notion} alt="" />
+            <img src={Pakipreneurs} alt="" />
             <div className="Company__info">
-              <h3>Notion</h3>
-              <p>Senior Product Designer</p>
+              <h3>Pakipreneurs</h3>
+              <p>As an Internship</p>
             </div>
           </div>
           <div className="Work__info">
-            <p>2022-2025</p>
+            <p>2025-2026</p>
           </div>
         </div>
       </div>
