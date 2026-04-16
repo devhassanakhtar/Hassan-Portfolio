@@ -8,6 +8,7 @@ import Work from './Routes/Work'
 import Blog from './Routes/Blog'
 import Contact from './Routes/Contact'
 import Footer from "./Components/Footer/Footer";
+import Project from "./Routes/Project";
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/work" element={<Work />}/>
         <Route path="/blog" element={<Blog />}/>
         <Route path="/contact" element={<Contact />}/>
+        <Route path="/project" element={<Project />}/>
       </Routes>
       <Footer />
     </div>

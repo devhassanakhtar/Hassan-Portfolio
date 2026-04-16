@@ -1,8 +1,7 @@
 import React from "react";
 import "./ProjectCard1.css";
 import { IoIosArrowRoundDown } from "react-icons/io";
-import { NavLink } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 const ProjectCard1 = (props) => {
   return (
@@ -15,7 +14,9 @@ const ProjectCard1 = (props) => {
             <p>{props.des}</p>
           </div>
           <span>
-            <NavLink to='/'> <IoIosArrowRoundDown className="icon" /> </NavLink>
+              <Link to="/project">
+                <IoIosArrowRoundDown className="icon" />
+              </Link>
           </span>
         </div>
       </div>

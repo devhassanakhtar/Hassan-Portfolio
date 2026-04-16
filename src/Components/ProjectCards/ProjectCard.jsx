@@ -14,7 +14,7 @@ import Project10 from "../../assets/Project10.webp";
 import Project11 from "../../assets/Project11.webp";
 import Project12 from "../../assets/Project12.webp";
 import Project13 from "../../assets/Project13.webp";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 
 const ProjectCard = (props) => {
   const projectCard = [

@@ -6,13 +6,14 @@ import { LuLayoutDashboard } from "react-icons/lu";
 import { BsBoxSeam } from "react-icons/bs";
 import { CiMicrochip } from "react-icons/ci";
 import { MdOutlineDesktopWindows } from "react-icons/md";
+import { NavLink } from "react-router";
 
 const Services = () => {
   return (
     <div className="Services__Section">
       <div className="Project__Heading">
         <h2>Services | Offers</h2>
-        <span>See All</span>
+        <span><NavLink to="services"> See All </NavLink></span>
       </div>
 
       <div className="Services">
