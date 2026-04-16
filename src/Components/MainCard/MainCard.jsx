@@ -3,10 +3,9 @@ import "./MainCard.css";
 import ProfileImage from "../../assets/hassan.webp";
 import { LuPhoneCall } from "react-icons/lu";
 import { LiaTelegramPlane } from "react-icons/lia";
+import { TbBrandFiverr } from "react-icons/tb";
 import {
   FaGithub,
-  FaTwitter,
-  FaInstagramSquare,
   FaLinkedin,
 } from "react-icons/fa";
 import { NavLink } from "react-router";
@@ -25,7 +24,8 @@ const MainCard = () => {
       </h1>
 
       <p>
-        I'm a passionate Frontend Developer 🖥️ with 1 year of experience, and I’m continuously learning to improve my skills.
+        I'm a passionate Frontend Developer 🖥️ with 1 year of experience, and
+        I’m continuously learning to improve my skills.
       </p>
 
       <div className="profile__btn">
@@ -58,10 +58,13 @@ const MainCard = () => {
             </a>
           </span>
           <span className="icon">
-            <FaTwitter />
-          </span>
-          <span className="icon">
-            <FaInstagramSquare />
+            <a
+              href="https://www.fiverr.com/hawebtech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TbBrandFiverr />
+            </a>
           </span>
           <span className="icon">
             <a

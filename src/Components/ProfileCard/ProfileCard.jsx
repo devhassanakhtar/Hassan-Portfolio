@@ -3,10 +3,9 @@ import "./ProfileCard.css";
 import ProfileImage from "../../assets/hassan.webp";
 import { LuPhoneCall } from "react-icons/lu";
 import { LiaTelegramPlane } from "react-icons/lia";
+import { TbBrandFiverr } from "react-icons/tb";
 import {
   FaGithub,
-  FaTwitter,
-  FaInstagramSquare,
   FaLinkedin,
 } from "react-icons/fa";
 import { NavLink } from "react-router";
@@ -59,10 +58,13 @@ const ProfileCard = () => {
             </a>
           </span>
           <span className="icon">
-            <FaTwitter />
-          </span>
-          <span className="icon">
-            <FaInstagramSquare />
+            <a
+              href="https://www.fiverr.com/hawebtech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TbBrandFiverr />
+            </a>
           </span>
           <span className="icon">
             <a
