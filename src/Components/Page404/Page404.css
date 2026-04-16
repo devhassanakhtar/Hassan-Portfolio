@@ -85,12 +85,13 @@
 
 .page404-btn.secondary {
   background: transparent;
-  color: #2563eb;
+  color: white;
   border: 1px solid #c7d2fe;
 }
 
 .page404-btn.secondary:hover {
   background: #eff6ff;
+  color: var(--black-color);
 }
 
 .page404-image {
