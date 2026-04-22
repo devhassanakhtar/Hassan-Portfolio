@@ -9,6 +9,17 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactSection = () => {
+  const handleWhatsApp = () => {
+    window.open("https://wa.me/03085409842", "_blank");
+  };
+
+
+  const handleEmail = () => {
+    window.open("mailto:hcodex5@gmail.com", "_blank");
+  };
+
+  
+
   const form = useRef();
 
   const [formData, setFormData] = useState({
@@ -20,7 +31,6 @@ const ContactSection = () => {
 
   const [errors, setErrors] = useState({});
 
- 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -68,18 +78,12 @@ const ContactSection = () => {
     setErrors({});
 
     emailjs
-      .sendForm(
-        "service_z44dewi",
-        "template_3rd9add",
-        form.current,
-        {
-          publicKey: "5LsB2o7ADd8-gUTND",
-        }
-      )
+      .sendForm("service_z44dewi", "template_3rd9add", form.current, {
+        publicKey: "5LsB2o7ADd8-gUTND",
+      })
       .then(() => {
         toast.success("Message sent successfully!");
 
-      
         setFormData({
           username: "",
           email: "",
@@ -87,7 +91,6 @@ const ContactSection = () => {
           message: "",
         });
 
-     
         form.current.reset();
       })
       .catch((error) => {
@@ -104,7 +107,6 @@ const ContactSection = () => {
         <div className="Form__Section">
           <div className="Form">
             <form ref={form} onSubmit={handleSubmit}>
-              
               <input
                 type="text"
                 name="username"
@@ -158,7 +160,7 @@ const ContactSection = () => {
           </div>
 
           <div className="Location">
-            <div className="phone">
+            <div className="phone" onClick={handleWhatsApp}>
               <FaPhone size={25} />
               <div>
                 <h3>Phone</h3>
@@ -166,7 +168,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="email">
+            <div className="email" onClick={handleEmail}>
               <MdEmail size={25} />
               <div>
                 <h3>Email</h3>
@@ -181,11 +183,9 @@ const ContactSection = () => {
                 <p>Jinnah Garden Islamabad</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-
 
       <div className="Map">
         <iframe

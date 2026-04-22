@@ -33,7 +33,7 @@ const Experties = () => {
 
           <div className="Experties">
             <img src={Reacticon} alt="" className="Bootstrap" />
-            <p>Reacticon</p>
+            <p>React</p>
           </div>
         </div>
 

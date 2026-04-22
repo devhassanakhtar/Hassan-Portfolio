@@ -103,6 +103,7 @@
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 20px rgba(255, 255, 255, 0.1);
   padding: 15px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .Location .phone span , .Location .email span , .Location .navigation span , .Location .Assistance span {
