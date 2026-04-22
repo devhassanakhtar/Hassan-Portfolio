@@ -16,7 +16,7 @@ const Connect = () => {
       </p>
 
       <button>
-        <NavLink to="/contact"> Let's Talk With us</NavLink>
+        <NavLink to="/contact"> Let's Talk</NavLink>
       </button>
     </div>
   );
